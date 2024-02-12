@@ -8,7 +8,7 @@ import { OthermessageService } from './othermessage.service';
 import {HttpClientModule } from '@angular/common/http';
 import { Comp1Component } from './comp1/comp1.component';
 import { Comp2Component } from './comp2/comp2.component';
-import { NumlistService } from './numlist.service';
+//import { NumlistService } from './numlist.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,14 @@ import { NumlistService } from './numlist.service';
     HttpClientModule,
   ],
   // NumlistService
-  providers: [MessageService,OthermessageService,NumlistService],
+  providers: [MessageService,OthermessageService,],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+  constructor() {
+   
+    console.log("App Module loaded...");
+    
+  }
+}
