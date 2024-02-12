@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { MessageService } from './message.service';
 import { OthermessageService } from './othermessage.service';
 import {HttpClientModule } from '@angular/common/http';
+import { Comp1Component } from './comp1/comp1.component';
+import { Comp2Component } from './comp2/comp2.component';
+import { NumlistService } from './numlist.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Comp1Component,
+    Comp2Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [MessageService,OthermessageService],
+  // NumlistService
+  providers: [MessageService,OthermessageService,NumlistService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

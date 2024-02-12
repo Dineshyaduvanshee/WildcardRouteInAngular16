@@ -8,7 +8,7 @@ import { HttpClient } from "@angular/common/http";
 // @Injectable({
 //   providedIn: 'root'
 // })
-
+@Injectable()
 export class MessageService {
 otherMsg :string = "";
   constructor(private _otherMessageService : OthermessageService) { }

@@ -1,0 +1,10 @@
+<h2>Component two</h2>
+
+<input type="text" #num placeholder="Enter the Second Number :"/>
+<br>
+<br>
+<button class="btn btn-primary" (click)="addNumer1(num.value)">Enter the Second Number : </button>
+<br>
+<ul *ngFor="let data of list2">
+    {{data}}
+</ul>
